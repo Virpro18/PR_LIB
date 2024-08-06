@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Teko:wght@300..700&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px 5px;
+    background: #201e1e41;
+}
+body {
+    height: 100vh;
+}
+.search-form {
+    display: flex;
+    gap: 0px;
+}
+.search-wrapper {
+    position: relative;
+    width: 200px;
+
+}
+
+.search-input,
+.search-btn {
+    border: none;
+}
+
+.search-input {
+    font-size: medium;
+    outline: none;
+    transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    padding: 5px;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 10px 2px #38acfabe;
+}
+
+.search-input:focus+.placeholder-label,
+.search-input:not(:placeholder-shown)+.placeholder-label {
+    top: -15%;
+    left: 9px;
+    font-size: 15px;
+    color: white;
+}
+
+.placeholder-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 19px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.primary-btn {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    border: none;
+    background: #0d6efd;
+    border-radius: 0px 6px 6px 0px;
+    width: 50px;
+    color: aliceblue;
+}

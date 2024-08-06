@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="dom.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <p id="test"></p>
-    <script>
-        fetch("https://first-nine-jet.vercel.app/?methode=s").then(response => response.json())
-            .then(data => {
-                console.log(data)
-                document.getElementById("test").innerHTML = data[0]
+    <header class="">
+        <form action="" class="search-form">
+            <div class="search-wrapper">
+            <input type="text" name="" id="search-inp" class="search-input" placeholder="">
+            <label for="search-inp" class="placeholder-label">Search...</label>
+        </div>
+            <button class="primary-btn search-btn">test</button>
+        </form>
+    </header>
+    <main>
 
-            })
+    </main>
+    <p id="test"></p>
+    <!-- <script src="index.js"> -->
     </script>
 </body>
 
